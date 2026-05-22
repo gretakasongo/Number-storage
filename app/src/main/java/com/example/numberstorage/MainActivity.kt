@@ -37,6 +37,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,
                     "Number saved",
                     Toast.LENGTH_SHORT).show()
+                // Clear EditText
+                editTextNumber.text.clear()
+            } else {
+                // Message when array is full
+                Toast.makeText(this,
+                    "Array is full. More values cannot be stored.")
+            }
             }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
