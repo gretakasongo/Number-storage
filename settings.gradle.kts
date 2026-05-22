@@ -24,4 +24,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Number storage"
 include(":app")
+include(":app")
  

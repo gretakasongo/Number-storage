@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Array of size 10
         var numbers = IntArray(10)
+        // Counter
+        var counter =0
         
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
