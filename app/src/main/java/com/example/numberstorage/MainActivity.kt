@@ -23,6 +23,15 @@ class MainActivity : AppCompatActivity() {
         val editTextNumber = findViewById<EditText>(R.id.editTextNumber)
         val buttonSave =  findViewById<Button>(R.id.buttonSave)
 
+        buttonSave.setOnClickListener {
+            // check if array is full
+            if (counter<10) {
+                // Get number from EditText
+                val number = editTextNumber.text.toString().toInt()
+                // Store number in array
+                numbers[counter]=number 
+            }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
