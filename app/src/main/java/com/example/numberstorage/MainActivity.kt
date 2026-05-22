@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -29,7 +30,13 @@ class MainActivity : AppCompatActivity() {
                 // Get number from EditText
                 val number = editTextNumber.text.toString().toInt()
                 // Store number in array
-                numbers[counter]=number 
+                numbers[counter]=number
+                // Increase counter
+                counter++
+
+                Toast.makeText(this,
+                    "Number saved",
+                    Toast.LENGTH_SHORT).show()
             }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
