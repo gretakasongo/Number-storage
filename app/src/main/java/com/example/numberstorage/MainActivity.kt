@@ -53,6 +53,13 @@ class MainActivity : AppCompatActivity() {
                     var sum = 0
                     // Variable for while loop
                     var index = 0
+                    // While loop to add all numbers
+                    while (index<counter) {
+                        // Add current number to total
+                        sum = sum + numbers[index]
+                        //Move to next number
+                        index++
+                    }
                 }
             }
             }
