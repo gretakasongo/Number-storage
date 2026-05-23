@@ -45,6 +45,13 @@ class MainActivity : AppCompatActivity() {
                     "Array is full. More values cannot be stored.",
                     Toast.LENGTH_LONG).show()
             }
+            // Average button
+            btnAverage.setOnClickListener {
+                // Check if numbers were entered
+                if (counter>0) {
+                    //
+                }
+            }
             }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
