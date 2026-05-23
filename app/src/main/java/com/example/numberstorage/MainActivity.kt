@@ -62,6 +62,18 @@ class MainActivity : AppCompatActivity() {
                     }
                     // Calculate average
                     val average = sum / counter
+                    // Display average
+                    Toast.makeText(
+                        this,
+                        "Average = $average",
+                        Toast.LENGTH_LONG).show()
+                } else {
+                    // Message if no numbers entered
+                    Toast.makeText(
+                        this,
+                        "No numbers entered",
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             }
             }
