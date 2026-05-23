@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         var numbers = IntArray(10)
         // Counter
         var counter =0
-        
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         val editTextNumber = findViewById<EditText>(R.id.editTextNumber)
         val buttonSave =  findViewById<Button>(R.id.buttonSave)
+        val btnAverage = findViewById<Button>(R.id.btnAverage)
 
         buttonSave.setOnClickListener {
             // check if array is full
