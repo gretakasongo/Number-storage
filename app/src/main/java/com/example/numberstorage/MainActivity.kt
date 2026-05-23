@@ -49,7 +49,10 @@ class MainActivity : AppCompatActivity() {
             btnAverage.setOnClickListener {
                 // Check if numbers were entered
                 if (counter>0) {
-                    //
+                    //Variable to store total
+                    var sum = 0
+                    // Variable for while loop
+                    var index = 0
                 }
             }
             }
