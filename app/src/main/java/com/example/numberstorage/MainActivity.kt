@@ -42,7 +42,8 @@ class MainActivity : AppCompatActivity() {
             } else {
                 // Message when array is full
                 Toast.makeText(this,
-                    "Array is full. More values cannot be stored.")
+                    "Array is full. More values cannot be stored.",
+                    Toast.LENGTH_LONG).show()
             }
             }
 
