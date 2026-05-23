@@ -48,18 +48,20 @@ class MainActivity : AppCompatActivity() {
             // Average button
             btnAverage.setOnClickListener {
                 // Check if numbers were entered
-                if (counter>0) {
+                if (counter > 0) {
                     //Variable to store total
                     var sum = 0
                     // Variable for while loop
                     var index = 0
                     // While loop to add all numbers
-                    while (index<counter) {
+                    while (index < counter) {
                         // Add current number to total
                         sum = sum + numbers[index]
-                        //Move to next number
+                        // Move to next number
                         index++
                     }
+                    // Calculate average
+                    val average = sum / counter
                 }
             }
             }
